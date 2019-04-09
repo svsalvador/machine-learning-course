@@ -13,9 +13,15 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
+sumatorio = 0;
+
+h = X * theta;
+error = h - y;
+cuadrado = error .^ 2;
+sumatorio = sum (cuadrado);
 
 
-
+J = ( 1 / ( 2 * m ) ) * sumatorio
 
 % =========================================================================
 
